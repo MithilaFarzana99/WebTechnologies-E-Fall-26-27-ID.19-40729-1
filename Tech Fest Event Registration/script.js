@@ -4,7 +4,7 @@ function addEvent(){
     let event = document.getElementById("event").value.trim();
     
     if (event == ""){
-        alert("Please enter an event name");
+        alert("Please enter events.");
         return;
     }
     
@@ -31,5 +31,9 @@ function confirmRegistration(){
         alert("No events has been added.");
         return;
     }
+
+    localStorage.setItem("studentName", name);
+    localStorage.setItem("events", JSON.stringify(events));
+    window.location.href="confirm.html";
 
 }
