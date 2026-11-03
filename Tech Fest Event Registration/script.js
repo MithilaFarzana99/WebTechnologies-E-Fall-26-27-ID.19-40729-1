@@ -27,7 +27,7 @@ function confirmRegistration(){
         return;
     }
 
-    if(events.length == ""){
+    if(events.length === 0){
         alert("No events has been added.");
         return;
     }
